@@ -32,7 +32,7 @@ const AddShowDeleteTodo = () => {
 		<View style={styles.container}>
 			<ScrollView
 				contentContainerStyle={{
-					flexGrow: 1
+					height: 600
 				}}
 				keyboardShouldPersistTaps="handled"
 			>
