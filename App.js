@@ -11,7 +11,22 @@ export default function App() {
 		{ text: "create an app", key: "2" },
 		{ text: "play on the switch", key: "3" }
 	]);
-	//
+	// the pressHandler will be used to identify which object to delete
+	const pressHandler = (key) => {
+		//
+		setTodos((prevTodos) => {
+			// Pass in our previous todo list (which is the current state)
+			return prevTodos.filter(
+				// filter through
+				(todo) =>
+					// each individual todo
+					todo.key != key
+				// if the key of the todo item, is not equal to the key of the item that is clicked,
+				// then return the item
+			);
+		});
+		//
+	};
 	return (
 		<View style={styles.container}>
 			{/* header */}
