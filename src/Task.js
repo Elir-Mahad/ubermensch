@@ -9,7 +9,6 @@ const Task = (props) => {
 				<View style={styles.square}></View>
 				<Text style={styles.itemText}>{props.text}</Text>
 			</View>
-			<View style={styles.circular}></View>
 		</View>
 	);
 };
