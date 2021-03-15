@@ -1,9 +1,13 @@
 import React from "react";
-import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
+import { StyleSheet, Text, TouchableOpacity } from "react-native";
 
-const ToDoItem = ({ item }) => {
+const ToDoItem = ({ item, pressHandler }) => {
+	//
 	return (
-		<TouchableOpacity>
+		<TouchableOpacity
+			//
+			onpress={() => pressHandler(item.key)}
+		>
 			<Text style={styles.item}>{item.text}</Text>
 		</TouchableOpacity>
 	);
