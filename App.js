@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, FlatList } from "react-native";
 import Header from "./src/Header";
+import ToDoItem from "./src/ToDoItem";
 
 export default function App() {
 	//
@@ -26,7 +27,7 @@ export default function App() {
 						data={todos}
 						renderItem={({ item }) => (
 							//
-							<Text> {item.text}</Text>
+							<ToDoItem item={item} />
 						)}
 					/>
 				</View>
