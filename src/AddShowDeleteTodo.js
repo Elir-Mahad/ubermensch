@@ -10,6 +10,8 @@ import {
 import Task from "./Task";
 import styles from "../ScreenStyles";
 
+//!------------------------------------IMPORTS ABOVE
+
 const AddShowDeleteTodo = () => {
 	//
 	const [task, setTask] = useState();
@@ -33,6 +35,8 @@ const AddShowDeleteTodo = () => {
 		// the items in this new list will pulled from the const itemscopy
 		// these items will include all existing items, minus the removed item
 	};
+
+	//!-------------------------------------VARIABLES ABOVE
 
 	return (
 		<ScrollView>

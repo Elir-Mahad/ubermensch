@@ -20,8 +20,8 @@ export default StyleSheet.create({
 	},
 	tasksContainer: {
 		padding: 10,
-		marginBottom: 30,
-		backgroundColor: "lightgrey"
+		marginBottom: 30
+		// backgroundColor: "lightgrey"
 	},
 	title: {
 		fontSize: 24,
